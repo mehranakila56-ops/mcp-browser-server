@@ -1,0 +1,36 @@
+{
+  "name": "mcp-browser-server",
+  "version": "0.1.0",
+  "description": "MCP server for AI-controlled browser automation. Supports local Chromium and cloud providers (AnchorBrowser, Browserbase).",
+  "main": "src/index.js",
+  "bin": {
+    "mcp-browser-server": "src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "jest"
+  },
+  "keywords": ["mcp", "browser-automation", "claude", "ai-agents", "playwright", "puppeteer", "anthropic", "model-context-protocol"],
+  "author": "mehranakila56-ops",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "peerDependencies": {
+    "puppeteer-core": ">=21.0.0"
+  },
+  "peerDependenciesMeta": {
+    "puppeteer-core": { "optional": true }
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mehranakila56-ops/mcp-browser-server.git"
+  }
+}
